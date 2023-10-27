@@ -1,4 +1,4 @@
-baseurl = "https://koorikla.github.io"
+baseurl = "https://koorikla.github.io/aerfolio"
 DefaultContentLanguage = "en"
 title = "Koorikla"
 theme = "beautifulhugo"
