@@ -11,13 +11,13 @@ tags: ["example", "photoswipe"]
 <script>
     pannellum.viewer('panorama', {
         "type": "equirectangular",
-        "panorama": "/img/photo2.jpg"
+        "panorama": "aerfolio/img/photo2.jpg"
     });
 </script> -->
 
 
 <!-- <a-scene embedded>
-    <a-sky src="/img/photo2.jpg" rotation="0 -130 0"></a-sky>
+    <a-sky src="aerfolio/img/photo2.jpg" rotation="0 -130 0"></a-sky>
 </a-scene> -->
 
 
@@ -32,10 +32,10 @@ Beautiful Hugo adds a few custom shortcodes created by [Li-Wen Yip](https://www.
 <!-- {{< youtube PivpCKEiQOQ >}} -->
 
 {{< panorama-container >}}
-    {{< panorama id="pano1" img="/img/photo2.jpg" >}}
-    {{< panorama id="pano2" img="/img/photo2.jpg" >}}
-    {{< panorama id="pano2" img="/img/photo2.jpg" >}}
-    {{< panorama id="pano2" img="/img/photo2.jpg" >}}  
+    {{< panorama id="pano1" img="aerfolio/img/photo2.jpg" >}}
+    {{< panorama id="pano2" img="aerfolio/img/photo2.jpg" >}}
+    {{< panorama id="pano2" img="aerfolio/img/photo2.jpg" >}}
+    {{< panorama id="pano2" img="aerfolio/img/photo2.jpg" >}}  
 {{< /panorama-container >}}
 
 
@@ -46,9 +46,9 @@ Beautiful Hugo adds a few custom shortcodes created by [Li-Wen Yip](https://www.
 asdasd
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
-  {{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
-  {{< figure thumb="" link="/img/photo2.jpg" caption="Triangle" alt="This is a long comment about a triangle" >}}
+  {{< figure thumb="-thumb" link="aerfolio/img/hexagon.jpg" >}}
+  {{< figure thumb="-thumb" link="aerfolio/img/sphere.jpg" caption="Sphere" >}}
+  {{< figure thumb="" link="aerfolio/img/photo2.jpg" caption="Triangle" alt="This is a long comment about a triangle" >}}
 {{< /gallery >}}
 
 
@@ -57,9 +57,9 @@ asdasd
 The above gallery was created using the following shortcodes:
 ```
 {{</* gallery caption-effect="fade" */>}}
-  {{</* figure thumb="-thumb" link="/img/hexagon.jpg" */>}}
-  {{</* figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" */>}}
-  {{</* figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="This is a long comment about a triangle" */>}}
+  {{</* figure thumb="-thumb" link="aerfolio/img/hexagon.jpg" */>}}
+  {{</* figure thumb="-thumb" link="aerfolio/img/sphere.jpg" caption="Sphere" */>}}
+  {{</* figure thumb="-thumb" link="aerfolio/img/triangle.jpg" caption="Triangle" alt="This is a long comment about a triangle" */>}}
 {{</* /gallery */>}}
 ```
 
