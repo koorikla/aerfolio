@@ -1,0 +1,6 @@
+<div style="width: {{ with .Get "width" }}{{ . }}{{ else }}300px{{ end }};">
+    <iframe width="100%" height="{{ with .Get "height" }}{{ . }}{{ else }}200px{{ end }}" 
+            src="https://www.youtube.com/embed/{{ .Get "id" }}" 
+            frameborder="0" allowfullscreen>
+    </iframe>
+</div>

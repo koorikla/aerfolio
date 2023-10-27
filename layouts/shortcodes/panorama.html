@@ -1,0 +1,17 @@
+<div id="{{ .Get "id" }}-container" 
+     style="cursor: pointer; width: 40%; height: 300px; background-image: url('{{ .Get "img" }}'); background-size: cover; transition: transform 0.2s ease-in-out;" 
+     onmouseover="this.style.transform='scale(1.1)'" 
+     onmouseout="this.style.transform='scale(1)'">
+    <p style="color: white; text-align: center; padding-top: 150px;">Click to view 360° panorama</p>
+</div>
+
+<script>
+    document.getElementById('{{ .Get "id" }}-container').onclick = function() {
+        this.outerHTML = '<div id="{{ .Get "id" }}" style="width: 40%; height: 300px;"></div>';
+        pannellum.viewer('{{ .Get "id" }}', {
+            "type": "equirectangular",
+            "panorama": '{{ .Get "img" }}',
+            "autoLoad": true
+        });
+    };
+</script>
